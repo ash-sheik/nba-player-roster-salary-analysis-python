@@ -2,8 +2,6 @@
 
 An exploratory Python notebook analyzing NBA player team distribution, positions, age and recorded salary patterns.
 
-> **Repository naming note:** The GitHub repository retains its earlier name `employee-workforce-analysis-python`, but the dataset and corrected notebook are about NBA players, not employees. A repository rename is recommended after approval.
-
 ## Analysis questions
 
 - How are players distributed across teams?
@@ -44,7 +42,6 @@ Open `Python-project.ipynb` and run all cells in order.
 
 1. Confirm and document the original dataset source, snapshot date and license.
 2. Re-run the notebook locally and regenerate the charts in `Output _graphs/`.
-3. Rename the repository to `nba-player-roster-salary-analysis-python` after confirming the new URL.
 4. Add a concise findings section based on the fresh notebook outputs.
 
 ## Author
