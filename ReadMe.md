@@ -1,33 +1,51 @@
 # Employee Workforce Analysis Using Python
 
-## 📘 Overview
-This project analyzes the ABC Company dataset containing employee details across teams and positions. It involves preprocessing, analysis, and visualization using Python.
+A Jupyter Notebook project exploring workforce composition, employee roles, age groups, salary distribution and team-level patterns using Python.
 
-## 🧹 Preprocessing
-- Replaced inconsistent height values with random numbers between 150–180 cm.
-- Verified dataset consistency and handled missing values if any.
+## Analysis Objectives
 
-## 📊 Analysis
-1. **Team Distribution:** Count and percentage of employees per team.
-2. **Position Segregation:** Breakdown of employees by position.
-3. **Predominant Age Group:** Identification of the most common age range.
-4. **Salary Expenditure:** Team and position with the highest total salary.
-5. **Age–Salary Correlation:** Relationship between employee age and salary.
+1. Examine employee distribution across teams.
+2. Explore the mix of positions and roles.
+3. Identify the most common age group.
+4. Compare salary expenditure across teams and positions.
+5. Explore the relationship between employee age and salary.
 
-## 📈 Visualizations
-Bar charts, scatter plots, and histograms were used to represent findings effectively.
+## Tools & Libraries
 
-## 🧑‍💻 Tools Used
-- Python (pandas, numpy)
-- Matplotlib & Seaborn
+- Python
+- Pandas and NumPy
+- Matplotlib and Seaborn
 - Jupyter Notebook
 
-## 📎 Dataset
-Dataset provided by ABC Company (`myexcel.csv`)
+## Repository Contents
 
-## 👩‍💻 Author
+- `Python-project.ipynb` — notebook containing the analysis.
+- `myexcel.csv` — dataset used in the notebook.
+- `Output _graphs/` — generated visualizations.
 
-**Ashiba B**  
-Data Analyst | SQL | Power BI | Excel | Python  
+## Important Data Preparation Note
 
-[LinkedIn](https://www.linkedin.com/in/ashiba-data-analyst) | [Email](mailto:ashibab23@gmail.com)
+The original notebook's preprocessing description mentions replacing inconsistent height values with randomly generated values. Random replacement does not recover the true measurements and can distort statistical analysis. Treat any analysis involving height as exploratory only; a stronger version of this project should preserve the original values, document missingness and use a justified imputation method only when appropriate.
+
+## Run the Notebook
+
+1. Clone or download the repository.
+2. Install the required packages:
+
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+
+3. Open `Python-project.ipynb` in Jupyter Notebook or VS Code.
+4. Ensure `myexcel.csv` is available at the path expected by the notebook.
+5. Run the notebook cells in order.
+
+## Portfolio Improvement Notes
+
+For reproducible analysis, document the dataset source and license, explain missing-value handling, add concise findings supported by notebook outputs, and ensure charts have readable labels and units.
+
+## Author
+
+**Ashiba B** · Python · Data Analysis · Visualization
+
+[LinkedIn](https://www.linkedin.com/in/ashiba-data-analyst) · [GitHub](https://github.com/ash-sheik)
