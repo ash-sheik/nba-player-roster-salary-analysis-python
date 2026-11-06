@@ -1,55 +1,54 @@
-# NBA Player Roster and Salary Exploration | Python
+# NBA Player Roster and Salary Analysis | Python
 
-> **Repository status:** This project is being corrected. The included CSV contains NBA player roster data, not employee workforce records. The repository name and notebook title have not yet been renamed.
+An exploratory Python notebook analyzing NBA player team distribution, positions, age and recorded salary patterns.
 
-This notebook explores a player dataset with team, position, age, height, weight, college and salary fields.
+> **Repository naming note:** The GitHub repository retains its earlier name `employee-workforce-analysis-python`, but the dataset and corrected notebook are about NBA players, not employees. A repository rename is recommended after approval.
 
-## Dataset and scope
+## Analysis questions
 
-- File: `myexcel.csv`
-- Subject: NBA player roster information
-- The data includes team and player attributes, with some missing and inconsistently formatted values.
-- Verify the original dataset source and license before redistributing or relying on the data.
+- How are players distributed across teams?
+- Which positions are most common?
+- What does the age distribution look like?
+- How do recorded salary totals and medians vary by team and position?
+- Is age associated with recorded salary in this dataset?
 
-## Intended analysis
+## Data quality
 
-- Player counts by team.
-- Roster composition by position.
-- Age distribution.
-- Salary distribution by team and position.
-- Team-level salary expenditure.
-- Highest-paid players, subject to data quality checks.
+The included CSV has inconsistent values in the `Height` column, including values formatted like dates. The notebook preserves the raw values and excludes height from quantitative analysis. It does not generate random replacement measurements.
 
-## Important data-quality warning
-
-The source `Height` column contains mixed formats and malformed values. The earlier notebook replaces height values with randomly generated numbers. Randomly generated replacement values are fabricated and are not valid measurements.
-
-**Do not use the notebook's current height-based results as factual findings.** A corrected analysis should preserve the original column, parse valid measurements, flag invalid values as missing and document the treatment. It should not invent replacement heights.
+Salary values are converted to numeric form; missing values are excluded from salary summaries and reported. Team salary totals should be interpreted with this missingness in mind.
 
 ## Repository contents
 
-- `Python-project.ipynb` — existing exploratory notebook; requires correction.
-- `myexcel.csv` — dataset used by the notebook.
-- `Output _graphs/` — previously generated charts; review before reuse.
+- `Python-project.ipynb` — revised NBA player analysis notebook.
+- `myexcel.csv` — source dataset currently included in the repository.
+- `Output _graphs/` — charts from the earlier notebook run; these are not yet refreshed against the revised notebook and should not be treated as current results.
 
 ## Run locally
 
-Install the common analysis dependencies:
+Install the dependencies:
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-Open `Python-project.ipynb` in Jupyter or VS Code and run cells in order. Some current notebook outputs reflect the preprocessing issue described above.
+Launch Jupyter from the repository directory:
 
-## Before presenting this as a portfolio project
+```bash
+jupyter notebook
+```
 
-1. Rename the repository and notebook to reflect NBA player analysis.
-2. Correct height parsing and remove random imputation.
-3. Re-run every cell and regenerate all figures.
-4. Verify the dataset source and usage terms.
-5. Add concise findings supported by the corrected analysis.
+Open `Python-project.ipynb` and run all cells in order.
+
+## Before using as a portfolio project
+
+1. Confirm and document the original dataset source, snapshot date and license.
+2. Re-run the notebook locally and regenerate the charts in `Output _graphs/`.
+3. Rename the repository to `nba-player-roster-salary-analysis-python` after confirming the new URL.
+4. Add a concise findings section based on the fresh notebook outputs.
 
 ## Author
 
-**Ashiba B**
+Ashiba B
+
+[LinkedIn](https://www.linkedin.com/in/ashiba-data-analyst) · [GitHub](https://github.com/ash-sheik)
