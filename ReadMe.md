@@ -1,51 +1,55 @@
-# Employee Workforce Analysis Using Python
+# NBA Player Roster and Salary Exploration | Python
 
-A Jupyter Notebook project exploring workforce composition, employee roles, age groups, salary distribution and team-level patterns using Python.
+> **Repository status:** This project is being corrected. The included CSV contains NBA player roster data, not employee workforce records. The repository name and notebook title have not yet been renamed.
 
-## Analysis Objectives
+This notebook explores a player dataset with team, position, age, height, weight, college and salary fields.
 
-1. Examine employee distribution across teams.
-2. Explore the mix of positions and roles.
-3. Identify the most common age group.
-4. Compare salary expenditure across teams and positions.
-5. Explore the relationship between employee age and salary.
+## Dataset and scope
 
-## Tools & Libraries
+- File: `myexcel.csv`
+- Subject: NBA player roster information
+- The data includes team and player attributes, with some missing and inconsistently formatted values.
+- Verify the original dataset source and license before redistributing or relying on the data.
 
-- Python
-- Pandas and NumPy
-- Matplotlib and Seaborn
-- Jupyter Notebook
+## Intended analysis
 
-## Repository Contents
+- Player counts by team.
+- Roster composition by position.
+- Age distribution.
+- Salary distribution by team and position.
+- Team-level salary expenditure.
+- Highest-paid players, subject to data quality checks.
 
-- `Python-project.ipynb` — notebook containing the analysis.
-- `myexcel.csv` — dataset used in the notebook.
-- `Output _graphs/` — generated visualizations.
+## Important data-quality warning
 
-## Important Data Preparation Note
+The source `Height` column contains mixed formats and malformed values. The earlier notebook replaces height values with randomly generated numbers. Randomly generated replacement values are fabricated and are not valid measurements.
 
-The original notebook's preprocessing description mentions replacing inconsistent height values with randomly generated values. Random replacement does not recover the true measurements and can distort statistical analysis. Treat any analysis involving height as exploratory only; a stronger version of this project should preserve the original values, document missingness and use a justified imputation method only when appropriate.
+**Do not use the notebook's current height-based results as factual findings.** A corrected analysis should preserve the original column, parse valid measurements, flag invalid values as missing and document the treatment. It should not invent replacement heights.
 
-## Run the Notebook
+## Repository contents
 
-1. Clone or download the repository.
-2. Install the required packages:
+- `Python-project.ipynb` — existing exploratory notebook; requires correction.
+- `myexcel.csv` — dataset used by the notebook.
+- `Output _graphs/` — previously generated charts; review before reuse.
+
+## Run locally
+
+Install the common analysis dependencies:
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-3. Open `Python-project.ipynb` in Jupyter Notebook or VS Code.
-4. Ensure `myexcel.csv` is available at the path expected by the notebook.
-5. Run the notebook cells in order.
+Open `Python-project.ipynb` in Jupyter or VS Code and run cells in order. Some current notebook outputs reflect the preprocessing issue described above.
 
-## Portfolio Improvement Notes
+## Before presenting this as a portfolio project
 
-For reproducible analysis, document the dataset source and license, explain missing-value handling, add concise findings supported by notebook outputs, and ensure charts have readable labels and units.
+1. Rename the repository and notebook to reflect NBA player analysis.
+2. Correct height parsing and remove random imputation.
+3. Re-run every cell and regenerate all figures.
+4. Verify the dataset source and usage terms.
+5. Add concise findings supported by the corrected analysis.
 
 ## Author
 
-**Ashiba B** · Python · Data Analysis · Visualization
-
-[LinkedIn](https://www.linkedin.com/in/ashiba-data-analyst) · [GitHub](https://github.com/ash-sheik)
+**Ashiba B**
